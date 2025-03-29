@@ -26,6 +26,7 @@
 .planetDescription {
   padding-block-start: var(--spacing-04);
   margin-block-end: auto;
+  font-weight: 300;
 }
 
 .planetThumbnail {
@@ -77,7 +78,7 @@
   font-size: small;
 }
 
-.addWishlistItem input, 
+.addWishlistItem input,
 .addWishlistItem select {
   height: 30px;
   margin-block-end: var(--spacing-20);

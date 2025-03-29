@@ -87,7 +87,6 @@ body {
   overflow-x: hidden;
 }
 
-
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -103,12 +102,19 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-block-end: var(--spacing-08);
   color: var(--primary-text-color);
 }
 
-p, b, i {
+p,
+b,
+i {
   margin-block-end: var(--spacing-08);
 }
 
@@ -118,8 +124,15 @@ button {
   padding: var(--spacing-08);
   border: none;
   background-color: white;
-  font-weight: 600;
-  letter-spacing: 2px;
+  color: rgb(77, 77, 77);
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: rgb(145, 99, 99);
+  color: white;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -134,7 +147,6 @@ button {
   padding-block-start: var(--header-height);
   color: #fff;
 }
-
 
 .card {
   position: relative;
@@ -181,6 +193,7 @@ button {
   line-height: 100px;
   cursor: pointer;
   background-color: white;
+  color: rgb(77, 77, 77);
   border-radius: 50%;
   font-size: 8px;
   font-weight: 800;
@@ -188,8 +201,9 @@ button {
 }
 
 .fullBGpicture {
-  /* background: url('/destination/background-destination-desktop.jpg') no-repeat; */
-  /* background-color: #000; */
+  background: url("/destination/background-destination-desktop.jpg") no-repeat;
+  background-color: #000;
+  background-size: cover;
   top: 0;
   bottom: 0;
   left: 0;
@@ -200,7 +214,7 @@ button {
 
 .fullBGpicture::before {
   content: "";
-  background: url('/destination/background-destination-desktop.jpg') no-repeat;
+  background: url("/destination/background-destination-desktop.jpg") no-repeat;
   background-color: #000;
   top: 0;
   bottom: 0;
