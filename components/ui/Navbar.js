@@ -1,9 +1,8 @@
 "use client";
-import classNames from "classnames";
 import { usePathname } from "next/navigation";
 
 import styles from "./Navbar.module.css";
-import NavItem from "./NavItem";
+import NavLink from "./NavLink";
 
 const navbarItems = [
   {
@@ -35,7 +34,7 @@ export const Navbar = () => {
         <div className={styles.navbarBG} />
         <ul className={styles.navbarList}>
           {navbarItems.map((item, index) => (
-            <NavItem
+            <NavLink
               key={index}
               title={
                 <>
@@ -46,8 +45,6 @@ export const Navbar = () => {
               isActive={item.link === currentPath}
             />
           ))}
-          {/* TASK - React 1 week 3 */}
-          {/* replace repeating content by using navbarItems.map(() => <NavLink />) */}
         </ul>
       </nav>
     </header>
