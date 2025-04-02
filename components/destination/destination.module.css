@@ -60,12 +60,11 @@
 
 .addWishlistItem {
   border: 1px solid var(--border-color);
-  width: 200px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: stretch;
-  margin: var(--spacing-20);
+  margin: var(--spacing-10);
   padding: var(--spacing-20);
 }
 
