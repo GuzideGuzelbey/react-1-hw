@@ -4,9 +4,50 @@
   height: 100vh;
 }
 
+.dailyImgContainer {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-16);
+}
 
 .nasaPicOfTheDayImg {
   width: auto;
   height: 400px;
+}
 
+.dailyImgExplanation {
+  text-align: justify;
+  font-weight: 300;
+  line-height: var(--spacing-24);
+  padding: 0 var(--spacing-16);
+  font-size: 0.9rem;
+}
+
+.roverPhotosContainer {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  font-weight: 300;
+}
+.roverPhotosGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.roverPhoto {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.roverPhoto img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
