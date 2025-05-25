@@ -28,10 +28,13 @@ export const NasaCollaboration = () => {
 
   useEffect(() => {
     const fetchDailyImages = async () => {
-      const dailyImageResponse = await fetch(
-        NASA_URLs.astronomyPicOfTheDay
-      ).then((response) => response.json());
-      setDailyImg(dailyImageResponse);
+      try {
+        const response = await fetch(NASA_URLs.astronomyPicOfTheDay);
+        const dailyImageResponse = await response.json();
+        setDailyImg(dailyImageResponse);
+      } catch (error) {
+        console.error("Failed to fetch NASA daily image:", error);
+      }
     };
     fetchDailyImages();
   }, []);
