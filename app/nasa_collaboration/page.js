@@ -27,7 +27,7 @@ export const NasaCollaboration = () => {
   }, []);
 
   useEffect(() => {
-    const fetchDailyImages = async () => {
+    const fetchDailyImage = async () => {
       try {
         const response = await fetch(NASA_URLs.astronomyPicOfTheDay);
         const dailyImageResponse = await response.json();
