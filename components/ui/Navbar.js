@@ -36,12 +36,9 @@ export const Navbar = () => {
           {navbarItems.map((item, index) => (
             <NavLink
               key={index}
-              title={
-                <>
-                  <b>{`0${index + 1}`}</b> {item.title}
-                </>
-              }
+              title={item.title}
               link={item.link}
+              index={index}
               isActive={item.link === currentPath}
             />
           ))}
