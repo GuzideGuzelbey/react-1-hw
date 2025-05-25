@@ -36,7 +36,7 @@ export const NasaCollaboration = () => {
         console.error("Failed to fetch NASA daily image:", error);
       }
     };
-    fetchDailyImages();
+    fetchDailyImage();
   }, []);
 
   return (
